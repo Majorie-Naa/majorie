@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, Image, View, StyleSheet, TouchableOpacity} from 'react-native';
 
+
 export function Product({name, price, image, onPress}) {
   return (
     <TouchableOpacity style={styles.card} onPress={onPress}>
@@ -15,7 +16,6 @@ export function Product({name, price, image, onPress}) {
     </TouchableOpacity>
   );
 }
-
 const styles = StyleSheet.create({
   card: {
     backgroundColor: 'white',
@@ -40,11 +40,11 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   name: {
-    fontSize: 22,
+    fontSize: 21,
     fontWeight: 'bold',
   },
   price: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '600',
     marginBottom: 8,
   },
